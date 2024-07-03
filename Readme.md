@@ -36,7 +36,7 @@ A simple string calculator implemented in TypeScript using the Test-Driven Devel
 2. Navigate to the project directory:
 
    ```
-   cd string-calculator
+   cd string_calculator
    ```
 
 3. Install dependencies:
