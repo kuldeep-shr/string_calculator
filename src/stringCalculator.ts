@@ -2,5 +2,7 @@ export function stringCalculator(input: string): number {
   if (input === "") {
     return 0;
   }
-  return -1;
+
+  const numbers = input.split(",").map(Number);
+  return numbers.reduce((sum, num) => sum + num, 0);
 }

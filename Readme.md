@@ -65,3 +65,8 @@ This file contains the implementation of the string calculator.
 `tests/stringCalculator.test.ts`
 
 This file contains the test cases for the string calculator.
+
+### 🧪 Example Test Cases:
+
+<li> Returns 0 for an empty string
+<li> Returns the number itself for a single number string
