@@ -24,11 +24,5 @@ export function stringCalculator(input: string): number {
   for (let i = 0; i < sanitizedInput.length; i++) {
     numbers.push(parseInt(sanitizedInput[i]));
   }
-
-  console.log(
-    "the sum of numbers is ....",
-    numbers,
-    numbers.reduce((sum, num) => sum + num, 0)
-  );
   return numbers.reduce((sum, num) => sum + num, 0);
 }
