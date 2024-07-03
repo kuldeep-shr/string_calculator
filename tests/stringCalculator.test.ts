@@ -19,6 +19,6 @@ describe("String Calculator", () => {
   });
 
   test("should handle custom delimiters", () => {
-    expect(stringCalculator("//;\n1;2")).toBe(3);
+    expect(stringCalculator("//[*][%]\n1*$$$$$2%3")).toBe(6);
   });
 });
