@@ -70,3 +70,6 @@ This file contains the test cases for the string calculator.
 
 <li> Returns 0 for an empty string
 <li> Returns the number itself for a single number string
+<li> Returns the sum of two numbers
+<li> Returns the sum of multiple numbers
+<li> Handles new lines as delimiters
