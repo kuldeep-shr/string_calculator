@@ -7,10 +7,17 @@ export function stringCalculator(input: string): number {
   if (/^\d+$/.test(input)) {
     return parseInt(input);
   }
-
   // remove all non-digit characters
   let sanitizedInput = input.replace(/[^\d]/g, "");
 
+  // check for negative numbers and throw an exception if found
+  const negativeNumbers = input.match(/-\d+/g);
+  if (negativeNumbers) {
+    console.log("in negative");
+    throw new Error(
+      `Negative numbers are not allowed: ${negativeNumbers.join(", ")}`
+    );
+  }
   let numbers: number[] = [];
 
   // converting into array of numbers

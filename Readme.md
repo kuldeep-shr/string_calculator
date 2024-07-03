@@ -74,3 +74,4 @@ This file contains the test cases for the string calculator.
 <li> Returns the sum of multiple numbers
 <li> Handles new lines as delimiters
 <li> Handles custom delimiters
+<li> Throws an error for negative numbers

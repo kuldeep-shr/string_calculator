@@ -21,4 +21,9 @@ describe("String Calculator", () => {
   test("should handle custom delimiters", () => {
     expect(stringCalculator("//[*][%]\n1*$$$$$2%3")).toBe(6);
   });
+  test("should throw an error for multiple negative numbers", () => {
+    expect(() => stringCalculator("-1,-2,3")).toThrow(
+      new Error("Negative numbers are not allowed: -1, -2")
+    );
+  });
 });
