@@ -3,7 +3,7 @@ export function stringCalculator(input: string): number {
     return 0;
   }
 
-  const numbers = input.split(",").map(Number);
+  const numbers = input.split(/[\n,]/).map(Number);
   console.log(
     "numbers sum is...",
     numbers.reduce((sum, num) => sum + num, 0)

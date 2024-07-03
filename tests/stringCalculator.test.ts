@@ -13,4 +13,8 @@ describe("String Calculator", () => {
   test("should return the sum of two numbers", () => {
     expect(stringCalculator("1,2")).toBe(3);
   });
+
+  test("should handle new lines as delimiters", () => {
+    expect(stringCalculator("1\n2,3")).toBe(6);
+  });
 });
