@@ -54,4 +54,22 @@ A simple string calculator implemented in TypeScript using the Test-Driven Devel
     npm test
 ```
 
-<br />
+## 📁 Project Structure
+
+**`src/stringCalculator.ts`**  
+Contains the implementation of the **string calculator** function.
+
+**`tests/stringCalculator.test.ts`**  
+Contains the **test cases** to verify the string calculator works correctly.
+
+---
+
+### 🧪 Example Test Cases
+
+- Returns `0` for an empty string.
+- Returns the number itself when the string contains a single number.
+- Returns the sum of two numbers.
+- Returns the sum of multiple numbers.
+- Supports **newlines** as delimiters.
+- Supports **custom delimiters** defined at the start of the string.
+- Throws an error when **negative numbers** are present.
