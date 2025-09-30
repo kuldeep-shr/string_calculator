@@ -28,5 +28,12 @@ export function stringCalculator(input: string): number {
     if (Number.isNaN(n)) throw new Error("Invalid number");
     return n;
   });
+
+  // Negative numbers: throw with list
+  const negatives = nums.filter((n) => n < 0);
+  if (negatives.length > 0) {
+    throw new Error(`negative numbers not allowed ${negatives.join(",")}`);
+  }
+
   return nums.reduce((s, x) => s + x, 0);
 }
