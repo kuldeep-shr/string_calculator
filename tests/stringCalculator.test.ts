@@ -9,4 +9,9 @@ describe("String Calculator", () => {
     expect(stringCalculator("1")).toBe(1);
     expect(stringCalculator("42")).toBe(42);
   });
+
+  test("two numbers, comma-separated, returns sum", () => {
+    expect(stringCalculator("1,5")).toBe(6);
+    expect(stringCalculator("10,20")).toBe(30);
+  });
 });

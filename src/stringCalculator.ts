@@ -1,11 +1,15 @@
-export function stringCalculator(input: string): number | void {
+export function stringCalculator(input: string): number {
   if (input === "") {
     return 0;
   }
 
-  // single number -> parse and return
-  // (this will also be updated later to handle lists)
-  const n = Number(input);
-  if (Number.isNaN(n)) throw new Error("Invalid number");
-  return n;
+  // Split on comma and sum all parts
+  const parts = input.split(",");
+  const nums = parts.map((p) => {
+    const n = Number(p);
+    if (Number.isNaN(n)) throw new Error("Invalid number");
+    return n;
+  });
+
+  return nums.reduce((s, x) => s + x, 0);
 }
