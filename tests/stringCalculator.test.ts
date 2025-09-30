@@ -14,4 +14,14 @@ describe("String Calculator", () => {
     expect(stringCalculator("1,5")).toBe(6);
     expect(stringCalculator("10,20")).toBe(30);
   });
+
+  test("any amount of numbers", () => {
+    expect(stringCalculator("1,2,3,4,5")).toBe(15);
+    expect(stringCalculator("100,200,300")).toBe(600);
+  });
+
+  test("allow newlines between numbers", () => {
+    expect(stringCalculator("1\n2,3")).toBe(6);
+    expect(stringCalculator("4\n5\n6")).toBe(15);
+  });
 });
