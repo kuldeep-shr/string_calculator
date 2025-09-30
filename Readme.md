@@ -17,3 +17,41 @@ A simple string calculator implemented in TypeScript using the Test-Driven Devel
         └── stringCalculator.test.ts
     └── tsconfig.json
 ```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm (Node Package Manager)
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/kuldeep-shr/string_calculator.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```
+   cd string_calculator
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+---
+
+<br />
+
+## 🛠️ Running the Tests
+
+```
+    npm test
+```
+
+<br />
