@@ -29,4 +29,13 @@ describe("String Calculator", () => {
     expect(stringCalculator("//;\n1;2")).toBe(3);
     expect(stringCalculator("//#\n2#3#4")).toBe(9);
   });
+
+  test("negative numbers throw with all negatives listed", () => {
+    expect(() => stringCalculator("-1")).toThrowError(
+      "negative numbers not allowed -1"
+    );
+    expect(() => stringCalculator("2,-4,3,-5")).toThrowError(
+      "negative numbers not allowed -4,-5"
+    );
+  });
 });
