@@ -24,4 +24,9 @@ describe("String Calculator", () => {
     expect(stringCalculator("1\n2,3")).toBe(6);
     expect(stringCalculator("4\n5\n6")).toBe(15);
   });
+
+  test("support custom single character delimiter", () => {
+    expect(stringCalculator("//;\n1;2")).toBe(3);
+    expect(stringCalculator("//#\n2#3#4")).toBe(9);
+  });
 });
